@@ -1,3 +1,5 @@
+# God of War III Remastered — Native Apple Silicon macOS Port
+
 <div align="center">
 
 <img src="assets/banner.svg" alt="God of War III Remastered: native Apple Silicon" width="100%">
@@ -20,6 +22,8 @@ shadPS4 video core to **Vulkan**, and Mesa's **KosmicKrisp** driver carries them
 [Roadmap](#roadmap--to-be-improved) · [Build](#building) · [Run](#running) · [Credits](#credits)
 
 </div>
+
+**God of War 3 on Mac:** This experimental, unofficial macOS ARM64 port brings the PS4 version of *God of War III Remastered* to Apple Silicon using ahead-of-time CPU recompilation and Vulkan-to-Metal graphics. It has been tested on an M2 MacBook Air; other Apple Silicon models remain unverified. You must supply your own legally obtained PS4 game dump.
 
 ---
 
