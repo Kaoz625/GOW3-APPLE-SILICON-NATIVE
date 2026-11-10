@@ -64,16 +64,16 @@ static void *guest_main(void *p) {
 
     recomp_init_tls(ctx, 0x3c0040ULL, 0x0ULL, 0x2740ULL, 0x10ULL);
 
-    recomp_setup_entry_args(ctx, argc, argv, 0x144070ULL);
+    recomp_setup_entry_args(ctx, argc, argv, 0x144060ULL);
 
     if (ps4_gow3gpu_start_requested_backend(ctx) != 0) {
         fprintf(stderr, "[ps4-recomp] Requested GoW3 Vulkan backend failed to initialize\n");
         exit(1);
     }
 
-    printf("[ps4-recomp] Executing %s (0x%x) via ARM64 assembly...\n", "_start", (unsigned int)0x144070ULL);
-    extern void fn_0x144070(void);
-    recomp_enter_guest(ctx, (uint64_t)fn_0x144070);
+    printf("[ps4-recomp] Executing %s (0x%x) via ARM64 assembly...\n", "_start", (unsigned int)0x144060ULL);
+    extern void fn_0x144060(void);
+    recomp_enter_guest(ctx, (uint64_t)fn_0x144060);
 
     printf("[ps4-recomp] Execution complete.\n");
     recomp_free_runtime(ctx);
